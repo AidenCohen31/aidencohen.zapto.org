@@ -1,0 +1,28 @@
+{
+  "name": "aidencohen.zapto.org",
+  "version": "1.0.0",
+  "description": "a webserver",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidenCohen31/aidencohen.zapto.org.git"
+  },
+  "keywords": [
+    "webserver",
+    "aidencohen"
+  ],
+  "author": "Aiden Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AidenCohen31/aidencohen.zapto.org/issues"
+  },
+  "homepage": "https://github.com/AidenCohen31/aidencohen.zapto.org#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}
