@@ -17,7 +17,7 @@
 }
 /* custom jumbotron */
 .parallax-jumbotron{
-    background:linear-gradient(rgba(0, 0, 250, 0.25), rgba(152, 125, 250, 0.45)), url(https://pixabay.com/get/e831b00d2efc023ecd1f4404e0444391eb75ffd41cb411469cf9c87fa1/mountains-1412683.svg);
+    background:linear-gradient(rgba(0, 0, 250, 0.25), rgba(152, 125, 250, 0.45)), url(../imgs/background.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 70vh;
