@@ -70,41 +70,48 @@ html.style.setProperty("--color4", array[random][4]);
             <div class="col">
                 <div>
                     <h2>The Problems Box</h2>
-                </div>
-                <div>
-                    <p>
-                      Scream here if you hate this website pls. I need good ideas for it.
-                      <div class= "input">
-                        
-                        <form action="/action_page.php">
-                            First name: <input type="text" name="fname"><br>
-                            Last name: <input type="text" name="lname"><br>
-                            <input type="submit" value="Submit">
-                          </form>
-
-
-                      </div>
-                    </p>
-                </div>
+                
             </div>
-            <!-- Sidebar -->
-            <div class="col-3">
-                <div class="card">
-                    <img class="card-img-top" src="imgs/profile.png" alt="" />
-                    <div class="card-body">
-                        <h3 class="card-title">Aiden Cohen</h3>
-                        <p class="card-text"> The Legend Himself.</p>
-                        <!-- Contact links -->
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a class="text-secondary" href="https://github.com/AidenCohen31"><span class="octicon octicon-mark-github"></span>&nbsp;AidenCohen31</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="text-secondary" href="#"><span class="octicon octicon-mail"></span>&nbsp;Email</a>
-                            </li>
-                        </ul>
+                    
+                     <p> Scream here if you hate this website pls. I need good ideas for it.</p>
+                    
+                   
+                        <form class = "form-horizontal" action = "email.php" method = "post">
+                            <div class="form-group">
+                                
+                                <div class = "col-3">
+                                    <label for="Email">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                             </div>
+                            </br>
+                             <div class="form-group">
+                                
+                                <div class = "col-3">
+                                    <label for="Name">Name</label>
+                                    <input type="text" class="form-control" id="Name Box" aria-describedby="" placeholder="Enter Name">
+                                </div>
+                             </div>
+                        </br>
+                        <div class="form-group">
+                            
+                            <div class = "col-3">
+                            <label for="exampleInputEmail1">Suggestions?</label>
+                            <input type="text" class="form-control" name = "sugg" id="suggestionbox" aria-describedby="emailHelp" placeholder="Enter Suggestions">
+                            </div>
+                         </div>
+                        </br>
+                            <div class="col-7 col-offset-1">
+                            <input type="submit" value="Submit" style="width: 100px">
+                        </div>
+                          </form>
+                       
+
+                    
+                   
                     </div>
-                </div>
+            </div>
+            
             </div>
         </div>
     </div>
