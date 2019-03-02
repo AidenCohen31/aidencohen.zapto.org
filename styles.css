@@ -8,30 +8,43 @@ html{
 
 }
 
+#title{
+    
+    color: var(color(--color2));
+    
+}
 body{
 
     background-color: var(--color1);
 }
+h2{
+    color: var(--color4);
+
+}
+p{
+
+    color: var(--color4);
+}
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: var(--color4);
+    color: var(--background);
+    font-family: "Audiowide", monospace;
+    font-weight: bold;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: var(--color2);
+   color: var(--color2); 
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: var(--color3);
 }
-.jumbotron{
 
-    color:var(--color2);
-    background-color: var(--color3);
-}
-.card{
+#siteheader{
 
- 
+    color:var(--background);
+    background-color: var(--background);
 }
+

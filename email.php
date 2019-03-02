@@ -9,15 +9,14 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $c = 'website suggs';
 $d = $c .= $name;
-$thanks = "Thank You for making my website better. I will definitely look forward to implementing".$msg."Thank You for taking your time to do this. Sincerely, Aiden Cohen.";
-if(mail("aidencohen31@gmail.com",$d ,$msg ) and mail($email, "Thank You", $thanks ))
+$thanks = "Thank You for making my website better. I will definitely look forward to implementing ".$msg." Thank You for taking your time to do this. Sincerely, Aiden Cohen.";
+if(mail("aidencohen31@gmail.com",$d ,$msg ) and mail($email, "Thank You", $thanks))
 {
 echo "message sent";
 }
-
 ?>
 
-<a href = aidencohen.zapto.org/index.html> return to home </a>
+<a href = index.html> return to home </a>
 </body>
 
 
