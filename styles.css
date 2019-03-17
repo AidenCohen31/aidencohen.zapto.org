@@ -48,3 +48,8 @@ p{
     background-color: var(--background);
 }
 
+#footer{
+
+    background-color:var(--color2);
+}
+
