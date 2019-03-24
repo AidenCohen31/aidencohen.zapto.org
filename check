@@ -1,6 +1,8 @@
-if[$(git status -uno)]; then
-        echo "hi"
-        git pull
+$var = git status -uno
+if[-z "$var"]
+then
+    echo "hi"
+    git pull
 else
-        echo "no"
+    echo "no"
 fi
