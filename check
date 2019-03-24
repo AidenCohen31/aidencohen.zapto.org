@@ -1,7 +1,8 @@
 #!/bin/bash
-VAR=$(git status -uno)
-echo $VAR
-if [ -z "$VAR" ]; 
+VAR=$(git merge-base origin master)
+VAR2=$(git rev-parse origin)
+
+if [ "$VAR" == $VAR2 ]; 
 then
     echo "hi"
     git pull
