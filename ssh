@@ -1,0 +1,6 @@
+if[$(git status -uno)]; then
+        echo "hi"
+        git pull
+else
+        echo "no"
+fi
