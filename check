@@ -1,5 +1,7 @@
-$var = git status -uno
-if[-z "$var"]
+#!/bin/bash
+VAR=$(git status -uno)
+echo $VAR
+if [ -z "$VAR" ]; 
 then
     echo "hi"
     git pull
