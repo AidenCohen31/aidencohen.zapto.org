@@ -1,0 +1,22 @@
+TODO:
+
+Fix Bugs
+
+Add JS animations to blog.html
+
+More JS in general.
+
+Add more PHP pages on the website (Ideas: Login, data processing, user processing etc.)
+
+Add Programming projects to website (work on Snake++, Conway's,)
+
+More ideas for programming projects.
+
+CTF writeups, and club management.
+
+Programming competition stuff.
+
+Actually add stuff to the about page.
+
+
+
