@@ -37,44 +37,66 @@ html.style.setProperty("--color4", array[random][4]);
 	</script>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-expand-md">
-        <a class="navbar-brand" href="http://aidencohen.zapto.org/index.html">AIDEN COHEN</a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="http://aidencohen.zapto.org/index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="http://aidencohen.zapto.org/suggestions.html">Problems?<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="http://aidencohen.zapto.org/about.html">About<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
+            <a class="navbar-brand" href="index.html">AIDEN COHEN</a>
             
-        </div>
-
-    </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="suggestions.html">Problems?<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                
+            </div>
+    
+        </nav>
     <!-- Page Content -->
     <!-- Big content in box at top -->
-    <div id="hero">
+    <div id="hero" style="padding-bottom: 0px;">
             <div class="jumbotron jumbotron-fluid parallax-jumbotron" id="siteheader">
-                <div class="container">
+                <div class="container ">
+                  
                     <h1 class="display-4" style = "color: var(--color2);">Blog</h1>
                     <p class="lead" style = "color: var(--color2);"> If you care about my opinions</p>
+                
+                   
                 </div>
             </div>
+                   
+                </div>
         </div>
         <!-- TODO: Add JS animation, More Blog Entries. Make Some Videos. Blender Amination-->
-    <div class="container">
-        <div class="row">
-            <!-- Main -->
-            <div class="col" id="main">
-                <div>
+    <div class="container-fluid">
+            <div class ="col-12 justify-content-end" style="background-color: var(--color1);"> 
+                    <div class= "searchbar float-right"><span class="text-right">Search Bar</span>
+                             <input class = "searchinput" type="text" aria-label="Search" placeholder="Search..."></input>
+                    </div>      
+                </div>    
+        
+    <div class="col" id="main">
+        <!--- 
+        <div class="streamline  btn btn-outline-primary Science Olympiad">
+               <img class="float-left" src="imgs/scienceolympiad.png" width="40" height="40"></img>
+            </br>
+               <h6 class= "bubblelabel"> Science Olympiad State </h3>
+            
+            </div>
+        -->  
+            </br>
+                
+            <div>
                     <h2>Science Olympiad State 2019 </h2>
                     <time> 3/16/19 </time>
                 </div>
@@ -105,7 +127,7 @@ If you have seen Aiden, you have an Aiden Number of 5. Unfortunately, Aiden has 
         </div>
     </div>
 </br>
-<div class="footer-copyright text-center py-3" id= "footer"> 
+<div class="footer-copyright text-center py-3 fixed-bottom" id= "footer"> 
 
     Made by Aiden Cohen
 </div>

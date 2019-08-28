@@ -37,7 +37,7 @@ html.style.setProperty("--color4", array[random][4]);
 	</script>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-expand-md">
-        <a class="navbar-brand" href="http://aidencohen.zapto.org/index.html">AIDEN COHEN</a>
+        <a class="navbar-brand" href="index.html">AIDEN COHEN</a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,13 +46,16 @@ html.style.setProperty("--color4", array[random][4]);
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://aidencohen.zapto.org/index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://aidencohen.zapto.org/suggestions.html">Problems?<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="suggestions.html">Problems?<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://aidencohen.zapto.org/about.html">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             
@@ -69,7 +72,7 @@ html.style.setProperty("--color4", array[random][4]);
                 </div>
             </div>
         </div>
-    <div class="container">
+    <div class="container" id="home">
         <div class="row">
             <!-- Main -->
             <div class="col">
@@ -81,6 +84,49 @@ html.style.setProperty("--color4", array[random][4]);
                         Aiden Cohen is the legend who made this website. He is the most amazing person in the world, you are lucky if
                         you know this legend of a man. The Man The Myth the Legend. He is a student at West high school.Hello
                     </p>
+                </div>
+
+                <div class= "mt-5" id="egobar">
+                    <small><h4>Tired of this egotistical douche??? </h4></small>
+                    <p> For a limited time you can shut him up! Just adjust this ego meter!</p>
+                </br>
+                </br>
+                <canvas id="canvas" width="700" height="150">
+                        Your browser does not support the HTML5 canvas tag.</canvas>
+                <img id = "face" src="-- Insert here--" width="220" height="277">
+                    <script>
+                        window.imgpos = 10
+                        var canvas = document.getElementById("canvas");
+                        canvas.addEventListener('click', on_click, false);
+                        if(canvas.getContext)
+                        {
+                            var context = canvas.getContext('2d');
+                            var img = document.getElementById("face");
+                            context.beginPath();
+                            context.lineWidth = 2;
+                            context.strokeStyle = "black";
+                            context.fillStyle = "#d3d3d3";
+                            context.strokeRect(10,20,400,5);
+                            context.fillRect(10,20,400,5);
+                            context.drawImage(img,10,10);
+
+                        }
+
+                        function on_click(ev)
+                        {
+                            
+                            var x = ev.clientX - (document.getElementById("canvas").offsetLeft + document.getElementById("home").offsetLeft);
+                            var y = ev.clientY - (document.getElementById("canvas").offsetTop + document.getElementById("home").offsetTop);
+                            
+                           if( x >= 10 && x <= 410 && y>=20 && y <= 25)
+                           {
+                               alert("clicked!");
+                           }
+                            
+                            
+                        }
+                    </script>
+
                 </div>
             </div>
             <!-- Sidebar -->
@@ -105,7 +151,7 @@ html.style.setProperty("--color4", array[random][4]);
         </div>
     </div>
 </br>
-<footer class="page-footer font-small mdb-color lighten-3 pt-4" style = "background-color:grey">
+<footer class="page-footer font-small mdb-color lighten-3 pt-4 fixed-bottom" style = "background-color:grey">
 
     <div class="footer-copyright text-center py-3">
         Made by Aiden Cohen
