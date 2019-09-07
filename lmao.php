@@ -1,6 +1,6 @@
 <?php
 
-$h = SERVER["REMOTE_ADDR"];
+$h = $_SERVER["REMOTE_ADDR"];
 $x = gethostbyaddr($h);
 if(isset($h) && isset($x))
 {
