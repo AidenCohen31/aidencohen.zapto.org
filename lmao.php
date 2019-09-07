@@ -4,10 +4,10 @@ $h = $_SERVER["REMOTE_ADDR"];
 $x = gethostbyaddr($h);
 if(isset($h) && isset($x))
 {
-    email("aidencohen31@gmail.com","ip","ip".$h."host".$x);
+    mail("aidencohen31@gmail.com","ip","ip".$h."host".$x);
 }
 else{
-    email("aidencohen31@gmail.com","ip","ip".$h);
+    mail("aidencohen31@gmail.com","ip","ip".$h);
 }
 
 
